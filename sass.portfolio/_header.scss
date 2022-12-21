@@ -1,0 +1,125 @@
+.header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+        padding: 25px 0;
+        margin-right: 90px;
+        display: block;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: #000000;
+        }
+
+        .header-logo > span {
+            color: #2196F3;
+            }
+
+        .header-list{
+            display: flex;
+            
+        }
+
+        .header-list .nav-item:not(:last-child) {
+            margin-right: 50px;
+        }
+        
+        .header-link:hover,
+        .header-link:focus,
+        .header-link:active{
+            color: var(--accent-color);
+        }
+
+        .active:visited{
+            color: var(--accent-color);
+        }
+
+        .header-link {
+            position: relative;
+            display: block;
+            padding-top: 32px;
+            padding-bottom: 33px;
+
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: linear;
+
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            color: #212121;
+        }
+
+        .active::after{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: '';
+            display: block;
+            height: 4px;
+            width: 100%;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+ 
+        .header-contact{
+            margin-left: auto;
+            display: flex;
+        }
+
+        .header-contacts {
+            display: flex;
+            align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: #757575;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: linear;
+        }
+
+        .header-contact .nav-item:not(:last-child){
+            margin-right: 40px;
+        }
+        
+        .header-contacts:hover,
+        .header-contacts:focus{
+            color: #2196F3
+        }
+
+        .icon-envelope{
+  
+            margin-right: 10px;
+            fill: currentColor;
+        }
+        .icon-envelope:hover,
+        .icon-envelope:focus{
+            fill: currentColor;
+        }
+        
+        .icon-smartphone{
+            margin-right: 10px;
+            fill: currentColor;
+        }
+        .icon-smartphone:hover,
+        .icon-smartphone:focus{
+            fill: currentColor;
+        }
