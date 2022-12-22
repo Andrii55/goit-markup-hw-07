@@ -23,14 +23,15 @@ color: #212121;
     display: flex;
     justify-content: center;
 }
-.customers__items:not(:last-child){
-    margin-right: 30px;
-}
+
 
 .customers__items{
     width: 170px;
     height: 92px;
-   
+
+    &:not(:last-child){
+        margin-right: 30px;
+    }
 }
 
 
@@ -52,14 +53,12 @@ color: #212121;
             transition-property: color;
             transition-duration: 250ms;
             transition-timing-function: linear;
+
+            &:hover {
+                border: 1px solid #2196F3;
+                color: #2196F3;
+              }
         }
-
-
-
-    .customers__link:hover {
-        border: 1px solid #2196F3;
-        color: #2196F3;
-      }
 
       .customers__Logo{
         fill: currentColor;

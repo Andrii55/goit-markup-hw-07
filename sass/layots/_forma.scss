@@ -51,12 +51,13 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: fill 250ms linear;
     
-}
-
-.forma-bt:hover,
-.forma-bt:focus{
+    &:hover,
+    &:focus{
     fill: var(--accent-color);
 }
+}
+
+
 
 .is-hidden{
     opacity: 0;

@@ -1,6 +1,6 @@
 .header{
     background-color: #FFFFFF;
-    border-bottom: #ECECEC;
+    border-bottom: #ECECEC; 
 }
 
 .header__main {
@@ -8,12 +8,12 @@
     align-items: center;
 }
 
+
+
 .header__logo {
 padding: 25px 0px;
 margin-right: 90px;
 display: block;
-
-
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
@@ -21,18 +21,22 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 color: #000000;
+
+& > span {
+    color: #2196F3;
+    }
 }
 
-.header__logo > span {
-color: #2196F3;
-}
+
 
 .header__list{
     display: flex;
+
+    & .header__list__nav:not(:last-child) {
+        margin-right: 50px;
+    }
 }
-.header__list .header__list__nav:not(:last-child) {
-    margin-right: 50px;
-}
+
 
 
 .header__link {
@@ -42,87 +46,84 @@ color: #2196F3;
     position: relative;
     transition-property: var(--accent-color);
     transition-duration: 250ms;
-   
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
-    
-}
 
-.header__link:hover,
-.header__link:focus,
-.header__link:active {
+    &:hover,
+    &:focus,
+    &:active {
     color: var(--accent-color);
 }
+}
+
+
 
 .header__active:visited{
     color: var(--accent-color);
+
+    &::after{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+    }
 }
-
-
-
-.header__active::after{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: '';
-    display: block;
-    height: 4px;
-    width: 100%;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-}
-
 
 
 .header__info {
     margin-left: auto;
     display: flex;
     
+    & .header__list__nav:not(:last-child) {
+        margin-right: 40px;
+    }
 }
-.header__info .header__list__nav:not(:last-child) {
-    margin-right: 40px;
-}
+
 
 .header__links{
     display: flex;
     padding-top: 30px;
     padding-bottom: 30px;
     align-items: center;
-
     transition-property: var(--accent-color);
     transition-duration: 250ms;
-
-
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: #757575;
-}
 
-.header__links:hover,
-.header__links:focus{
+&:hover,
+&:focus{
     color: #2196F3
+}
 }
 
 .header__icon__envelope{
-  
     margin-right: 10px;
     fill: currentColor;
-}
-.header__icon__envelope:hover,
-.header__icon__envelope:focus{
+
+   &:hover,
+   &:focus{
     fill: currentColor;
 }
+}
+
 
 .header__icon__smartphone{
     margin-right: 10px;
     fill: currentColor;
-}
-.header__icon__smartphone:hover,
-.header__icon__smartphone:focus{
+
+   &:hover,
+   &:focus{
     fill: currentColor;
 }
+}
+

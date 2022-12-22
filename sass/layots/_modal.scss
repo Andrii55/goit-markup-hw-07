@@ -5,8 +5,6 @@
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    
-
     transition-property: opacity, visibility;
     transition-duration: 250ms;
     transition-timing-function: linear;  
@@ -25,7 +23,6 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
-
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: linear;
@@ -50,12 +47,13 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: fill 250ms linear;
     
-}
-
-.modal__btn:hover,
-.modal__btn:focus{
+    &:hover,
+    &:focus{
     fill: var(--accent-color);
 }
+}
+
+
 
 .is-hidden{
     opacity: 0;
@@ -108,20 +106,16 @@ margin-bottom: 10px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         padding-left: 12px;
-        
-    }
-
-    .modal__input{
         padding-left: 42px;
         transition-property: border-color;
         transition-duration: 250ms;
         transition-timing-function: linear;
-    }
-    
-    .modal__input:hover,
-    .modal__input:focus{
+
+        &:hover,
+        &:focus{
         border-color: var(--accent-color);
         outline: transparent;
+    }
     }
     
     .modal__input:hover + svg,
@@ -160,13 +154,15 @@ margin-bottom: 10px;
         transition-property: border-color;
         transition-duration: 250ms;
         transition-timing-function: linear;
-        }
-        
-        .modal__text:hover,
-        .modal__text:focus{
+
+        &:hover,
+        &:focus{
             border-color: var(--accent-color);
             outline: transparent;
         }
+        }
+        
+      
     
     
     label.modal__politik__label{
@@ -191,18 +187,21 @@ margin-bottom: 10px;
         justify-content: center;
         align-items: center;
         
+        & svg{
+            fill: transparent;
+        }
     }
-    .modal__politic__check2 svg{
-        fill: transparent;
-    }
+    
     .modal__politic__check:checked + label > span{
         border: none;
         background-color: var(--accent-color);
+
+        &:checked + label > span svg{
+            fill: var(--color-white);
+        }
     }
     
-    .modal__politic__check:checked + label > span svg{
-        fill: var(--color-white);
-    }
+    
     
     .modal__contract{
         padding-left: 3px;

@@ -13,17 +13,16 @@
     margin-bottom: 10px;
 }
 
-.details__list > p {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
 .details__list {
     display: flex;
     flex-wrap: wrap;
-    
+
+    & > p {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #757575;
+    }
 }
 
 .details__description:not(:last-child) {
