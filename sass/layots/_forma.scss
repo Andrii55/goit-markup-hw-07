@@ -5,11 +5,14 @@
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    
-
     transition-property: opacity, visibility;
     transition-duration: 250ms;
     transition-timing-function: linear;  
+
+    &.is-hidden .forma-bg{
+        transform: translate(-50%, -50%) scale(0);
+       
+    }
 }
 
 
@@ -33,10 +36,7 @@
 
 } 
 
-.forma.is-hidden .forma-bg{
-    transform: translate(-50%, -50%) scale(0);
-   
-}
+
 
 .forma-bt{
     display: inline-block;

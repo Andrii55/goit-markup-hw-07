@@ -40,9 +40,7 @@
             outline: transparent;
             border-color: var(--accent-color);
         }
-        }
-        
-        .footer__form__email::placeholder{
+        &::placeholder{
             font-weight: 400;
             font-size: 16px;
             line-height: 1.25;
@@ -51,6 +49,9 @@
             letter-spacing: 0.03em;
             color: rgba(255, 255, 255, 0.6);
             }
+        }
+        
+       
         
         
         
