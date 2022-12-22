@@ -1,12 +1,22 @@
 
+// ---------BASE---------
+
 @import './base/reset';
 @import './base/common.scss';
 @import './base/hidden.scss';
 
+
+// ----------UTILIS---------
+
 @import './utils/vars';
 
-@import './components/container.scss';
+// ---------COMPONENTS---------
+
+@import './components/container';
 @import './components/title';
+
+
+// ---------LAYOTS---------
 
 @import './layots/header';
 @import './layots/hero';
