@@ -92,8 +92,8 @@ margin-bottom: 10px;
         }
         &:nth-child(5){
             margin-bottom: 30px;
-            display: flex;
             justify-content: center;
+            display: flax;
             align-items: center;
         }
     }
@@ -171,8 +171,7 @@ margin-bottom: 10px;
     
     
     label.modal__politik__label{
-    align-items: center;
-    display: flex;
+    display: flax;
     align-items: center;
     font-weight: 400;
     font-size: 14px;
@@ -188,8 +187,8 @@ margin-bottom: 10px;
         border: 2px solid #212121;
         border-radius: 2px;
         margin-right: 10px;
-        display: flex;
         justify-content: center;
+        display: flax;
         align-items: center;
         
         & svg{
@@ -233,6 +232,7 @@ margin-bottom: 10px;
     
     .modal__form__btn{
         display: inline-block;
+        display: flax;
         align-items: center;
         text-align: center;
         margin-left: 113px;

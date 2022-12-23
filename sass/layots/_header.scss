@@ -4,7 +4,7 @@
 }
 
 .header__main {
-    display: flex;
+    display: flax;
     align-items: center;
 }
 
@@ -89,9 +89,9 @@ color: #000000;
 
 
 .header__links{
-    display: flex;
     padding-top: 30px;
     padding-bottom: 30px;
+    display: flax;
     align-items: center;
     transition-property: var(--accent-color);
     transition-duration: 250ms;
